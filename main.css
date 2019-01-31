@@ -154,13 +154,13 @@ header{
 
 .Project{
     background-color: white;
-    border: 1px solid rgb(197, 197, 197);
+    border: 0.1rem solid #DADCE0;
     border-radius: 10px;
     padding: 24px;
 }
 
 .Project:hover{
-    box-shadow: 0 0 6px 0 rgb(197, 197, 197);
+    box-shadow: 0 0 12px 0 rgb(190, 190, 190);
 }
 
 /* Project 01 */
@@ -281,7 +281,7 @@ header{
 }
 
 .mBox{
-    border: 1px solid #b4b4b4;
+    border: 1px solid #DADCE0;
     border-radius: 10px;
     padding: 24px;
     box-shadow: 0 0 4px 0 #b6b6b6;
@@ -292,7 +292,7 @@ header{
     text-transform: uppercase;
 }
 .mBox:hover{
-    box-shadow: 0 0 10px 0 #969696;
+    box-shadow: 0 0 10px 0 #8b8b8b;
     scale: 1.2;
 }
 
@@ -359,6 +359,7 @@ header{
 .skillBox{
     border-radius: 1.5rem;
     position: relative;
+    transition: font-size 1s ;
 }
 
 .overlay{
@@ -582,7 +583,7 @@ header{
 
     transition: all ;
     transition-duration: 1s;
-    box-shadow: 0px 0px 2px 0px rgb(36, 36, 36);
+    box-shadow: 0px 0px 10px 0px rgb(129, 129, 129);
     position: relative;
 }
 .next, .prev{
@@ -705,8 +706,26 @@ footer{
         padding:0px 32px 32px 32px ;
         background-position:-800px;
     }
+
+    #navbar{
+        background-color: #212121;
+        height: 10vh;
+        z-index: 200;
+    }
     #navbar ul{
-        margin-left: 8px;
+        margin-top: 16px;
+        margin-left: 16px;
+        display: inline-block;
+    }
+
+    #navbar ul li{
+        transform: rotate(0deg);
+        float: left;
+        padding: 4px;
+    }
+
+    #navbar ul li a{
+        font-size: 1em;
     }
 
     .coverLeft{
