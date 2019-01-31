@@ -705,16 +705,17 @@ footer{
     header{
         padding:0px 32px 32px 32px ;
         background-position:-800px;
+        box-sizing: border-box;
     }
 
     #navbar{
         background-color: #212121;
         height: 10vh;
-        z-index: 200;
+        z-index: 100;
+        padding: 12px;
+        box-sizing: border-box;
     }
     #navbar ul{
-        margin-top: 16px;
-        margin-left: 16px;
         display: inline-block;
     }
 
@@ -725,7 +726,7 @@ footer{
     }
 
     #navbar ul li a{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .coverLeft{
