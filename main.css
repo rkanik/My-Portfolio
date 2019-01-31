@@ -24,43 +24,56 @@ body{
 }
 
 header{
-    height: 70px;
     width: 100%;
-}
-
-.CoverSection{
     min-height: 100vh;
-    padding:0px 70px 70px 70px ;
     background-image: url(images/header_background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -70px;
 }
 
-.navbar ul li{
-    display: inline-block;
+
+.coverLeft{
+    padding-top: 15vh;
+    padding-left: 10%;
+    width: 50%;
+    text-align: center;
 }
 
-.navbar ul li a{
+#navbar{
+    position: fixed;
+}
+
+#navbar ul{
+    height: 95vh;
+    display: grid;
+    margin-left: 16px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#navbar ul li{
+    transform: rotate(-90deg);
+    list-style: none;
+    text-align: center;
+}
+
+#navbar ul li a{
     text-decoration: none;
-    color: #8D8D8D;
-    display: block;
-    padding: 20px;
+    color: rgb(128, 128, 128);
+    font-size: 0.8em;
+    border-left: 1px solid aqua;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
 }
 
-#Checked{
-    border-bottom: 2px solid #0097a7;
-}
-
-.navbar ul li a:hover{
-    background: #313131;
+#navbar ul li a:hover{
     color: aqua;
 }
 
-.coverLeft{
-    margin-top: 24px;
-    width: 60%;
-    text-align: center;
+#navbar ul li a:active{
+    color: aqua;
 }
 
 #iam{
@@ -86,7 +99,7 @@ header{
     width:200px;
     background-color: #00bcd4;
     top: 110px;
-    left: 16rem;
+    left: 14rem;
     border-radius: 10px;
 }
 
@@ -688,16 +701,17 @@ footer{
 
 /* Google Pixel 2XL */
 @media screen and (max-width: 823px) {
-    .CoverSection{
+    header{
         padding:0px 32px 32px 32px ;
         background-position:-800px;
     }
-    .navbar ul li a{
-        padding: 12px;
+    #navbar ul{
+        margin-left: 8px;
     }
 
     .coverLeft{
         text-align: left;
+        padding-left: 5%;
     }
 
     #iam{
