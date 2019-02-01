@@ -1,5 +1,5 @@
 
-var count = 1;
+ var count = 1;
 
 window.setInterval(function(){
     nextImage();

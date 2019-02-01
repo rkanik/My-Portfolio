@@ -24,8 +24,7 @@ body{
 }
 
 header{
-    width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     background-image: url(images/header_background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,12 +41,18 @@ header{
 
 #navbar{
     position: fixed;
+    height: 100vh;
+    width: 5vw;
+}
+
+#navbar:hover{
+    transition: background 0.5s;
+    background-color: #313131;
 }
 
 #navbar ul{
     height: 95vh;
     display: grid;
-    margin-left: 16px;
     box-sizing: border-box;
     font-weight: bold;
 }
@@ -56,20 +61,21 @@ header{
     transform: rotate(-90deg);
     list-style: none;
     text-align: center;
+    padding-top: 18px;
 }
 
 #navbar ul li a{
     text-decoration: none;
     color: rgb(128, 128, 128);
     font-size: 0.8em;
-    border-left: 1px solid aqua;
+    border-left: 1px solid rgb(0, 212, 212);
     padding-left: 8px;
     padding-right: 8px;
     box-sizing: border-box;
 }
 
 #navbar ul li a:hover{
-    color: aqua;
+    color: rgb(0, 168, 168);
 }
 
 #navbar ul li a:active{
@@ -305,9 +311,14 @@ header{
 /* ABOUT */
 
 .About{
-    background: #00bcd4;
+    height: 100vh;
+    background-image: url(images/about_back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 100px;
     margin-top: 6rem;
+    box-sizing: border-box;
 }
 
 .About h3{
@@ -688,6 +699,7 @@ footer{
 
 .SocialLinks a{
     display: inline;
+    cursor: pointer;
 }
 
 
@@ -698,6 +710,30 @@ footer{
     box-sizing: border-box;
     padding-left: 100px;
     padding-top: 32px;
+}
+
+.fa-facebook-square:hover{
+    color: #57ADF5;
+}
+
+.fa-linkedin-in:hover{
+    color: #1C79B3;
+}
+
+.fa-github:hover{
+    color: rgb(102, 102, 102);
+}
+
+.fa-google-plus-g:hover{
+    color: #D84B47;
+}
+
+.fa-skype:hover{
+    color: rgb(0, 125, 228);
+}
+
+.fa-instagram:hover{
+    color: #E10028;
 }
 
 /* Google Pixel 2XL */
