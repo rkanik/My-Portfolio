@@ -573,14 +573,14 @@ header{
     text-align: justify;
 }
 
-.pro3Content a{
+.pro3Content a, .pro4Content a{
     float: right;
     position: absolute;
     bottom: 0;
     right: 24px;
 }
 
-.pro3Content a img{
+.pro3Content a img, .pro4Content a img{
     height: 24px;
     width: 24px;
 }
@@ -736,6 +736,28 @@ footer{
     color: #E10028;
 }
 
+.pro4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.video{
+    grid-column: 2 / 3;
+
+}
+
+.pro4Content{
+    grid-column: 1 / 2 ;
+    margin-right: 32px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.pro4Content h1{
+    margin-bottom: 32px;
+}
+
+
 /* Google Pixel 2XL */
 @media screen and (max-width: 823px) {
     header{
@@ -747,6 +769,7 @@ footer{
     #navbar{
         background-color: #212121;
         height: 10vh;
+        width: 100%;
         z-index: 100;
         padding: 12px;
         box-sizing: border-box;
@@ -930,6 +953,25 @@ footer{
     .footerBottom{
         padding-left: 32px;
         height: 70px;
+    }
+
+    .pro4{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .video{
+        grid-column: 1;
+        position: relative;
+        margin-top: 32px;
+    }
+
+    .video iframe{
+        width: 100%;
+    }
+    
+    .pro4Content{
+        grid-column: 1 ;
     }
 
 }
